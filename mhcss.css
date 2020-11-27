@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0px;font-family: "Amiko";background: #F7F7F7;
+}
+
+.nav-container{
+	overflow: hidden;height: 57px;border-bottom: solid 1px rgba(0, 0, 0, .1);background-color: #FFFFFF;
+}
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#center{
+	display: block;
+}
+.nav-li {
+    float: left;
+}
+.nav-li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-div{
+	padding-bottom: 20px;
+}
+.nav-div:hover{
+	border-bottom: #111111 solid 2px;
+}
+
+
+.main-container{
+	margin:  0 auto;padding-bottom: 50px;margin-top: 150px;margin-bottom: 170px;padding-top: 50px;background-color: #FFFFFF;background-image: url(12.jpg) no-repeat;
+}
+.form-container{
+	margin:  0 auto;padding-bottom: 100px
+}
+.main-form{
+	background: #FFFFFF;margin:  0 auto; box-shadow: 1px 1px 3px 0.5px rgba(0,0,0,0.1);padding: 30px;
+}
+.main-form:hover{
+	box-shadow: 2px 2px 3px 0.5px rgba(0,0,0,0.1)
+}
+.form-field{
+	padding: 20px;width: 300px;font-family:Amiko;font-size: inherit;outline: none;
+}
+.form-button{
+	background: #FFFFFF;border: solid 2px #000000;padding: 20px;width: 100%;font-weight: bold;
+}
+.form-button:hover{
+	color: #FFFFFF;background: #111111
+}
+.links{
+	text-decoration: none;color: #000000;
+}
+.form-select{
+	
+}
+/*
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+} */
+.footer-ul{
+    list-style-type: none;padding: 10px;
+}
+.links:hover{
+	opacity: 0.9;
+}
+.footer-li{
+	display: inline;
+}
+.footer-img:hover{
+	opacity: 1;
+}
+.footer-img{
+	opacity: 0.8
+}
+
+/*grid items*/
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  background-color: #111111;
+	height: 600px;
+	color: #F7F7F7;
+	
+}
+
+.grid-item {
+  
+  
+  padding: 20px;
+  text-align: center;
+  box-sizing: inherit;
+	
+}
+#grid_img{
+	background-image: url(couple.jpg);
+	background-repeat: no-repeat ;
+	background-position: center;
+	background-size: cover;
+	opacity: .8;
+}
+#grid_img:hover{
+	opacity: 1;
+}
+

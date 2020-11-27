@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+  <link rel="stylesheet" href="mhcss.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navigation-->
+  <div class="nav-container">
+    <ul class="nav-ul">
+      <li class="nav-li"><a href="index.html">
+          <div class="nav-div">These MH Project.</div>
+        </a></li>
+      <li class="nav-li"><a href="#news">
+          <div class="nav-div">About</div>
+        </a></li>
+      <li class="nav-li"><a href="#contact">
+          <div class="nav-div">Our Services</div>
+        </a></li>
+      <li class="nav-li"><a href="#contact">
+          <div class="nav-div">Contact us</div>
+        </a></li>
+      <li class="nav-li"><a href="#contact">
+          <div class="nav-div">Drop-Down <img style="float: right;" src="1x/baseline_expand_more_black_18dp.png"
+              alt="dropdown"></div>
+        </a></li>
+      <li class="nav-li" style="float:right"><a href="page1.html">
+          <div class="nav-div">Login</div>
+        </a></li>
+    </ul>
+  </div>
+  <br>
+  <!--Navigation end-->
+
+  <!---signup form start-->
+  <div style="width: 500px;height: 1000px;" class="form-container" align="center">
+    <p style="font-size: 40px;">Register=Save Lives</p>
+    <form class="main-form" name="register" method="post" action="project.php">
+      <table>
+        <tr>
+          <td><label>Name</label></td>
+          <td><input class="form-field" type="text" placeholder="Name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label>Username</label></td>
+          <td><input class="form-field" type="text" placeholder="Username" name="username"></td>
+        </tr>
+        <tr>
+          <td><label>Email</label></td>
+          <td><input class="form-field" type="email" placeholder="Enter your email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label>Password</label></td>
+          <td><input class="form-field" type="password" placeholder="Password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label>Confirm Password</label></td>
+          <td><input class="form-field" type="text" placeholder="Confirm Password"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td class="form-select"><select name="gender"
+              style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit">
+              <option>Select Your Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>DOB</td>
+          <td><select name="dob" style="padding: 20px;margin-right: 10px;font-family:Amiko;font-size: inherit">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+            </select><select style="padding: 20px;margin-right: 10px;font-family:Amiko;font-size: inherit">
+              <option>Month</option>
+              <option>Jan</option>
+              <option>Feb</option>
+            </select><select style="padding: 20px;font-family:Amiko;font-size: inherit">
+              <option>Year</option>
+              <option>1998</option>
+              <option>2018</option>
+            </select></td>
+
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td><select name="country"
+              style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit">
+              <option>Select Country</option>
+              <option>Pakistan</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><select name="city" style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit">
+              <option>Select City</option>
+              <option>Islamabad</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td><input class="form-field" type="tel" placeholder="+92-301-5172301" name="phone"></td>
+
+        </tr>
+        <tr>
+          <td>Blood Group</td>
+          <td><select name="bloodgroup"
+              style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit">
+              <option>Select Your Blood Group</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>O+</option>
+              <option>O-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td colspan="2">By creating an account you agree to our Terms & Privacy.</td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="page2.html"><input class="form-button" type="submit" name="submit" value="REGISTER"
+                onClick="page2()" style="cursor: pointer"></a></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <!---sign up form end-->
+  <br>
+
+  <!---Grid  box apps-->
+  <div class="grid-container">
+    <div class="grid-item" style="padding-top: 200px">its the Begining.</div>
+    <div class="grid-item" id="grid_img"></div>
+
+  </div>
+  <!----grid end>
+	<!---Footer-->
+  <div style="background-color: #FFFFFF;padding: 60px;">
+    <div style="float: left;padding-left: 50px;padding-right: 50px;" class="footer-img">
+      <img src="drop@2x copy.png" alt="logo">
+    </div>
+    <div>
+      <ul class="footer-ul">
+
+        <li class="footer-li"><a href="#" class="links" style="padding: 10px">How it works</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Our Story</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Blog</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">FAQ</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Career</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Terms</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Privacy Policy</a></li>
+        <br>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Contact</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Newsletter</a></li>
+        <li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Refer a friend</a></li>
+      </ul>
+    </div>
+    <div></div>
+    <p>We look upon different platforms but there is no such platform in modern era of technology that helps people to
+      find and navigate the blood banks near them so we decide to create such platform.
+    </p>
+    <hr style="opacity: 0.1;">
+    <p style="float: left">Terms and Conditions | Privacy Policy</p>
+    <p style="float: right">© 2018 The MH Project.</p>
+  </div>
+
+
+  <!--footer end--->
+</body>
+
+</html>

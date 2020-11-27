@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="mhcss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+
+
+	<style>
+		.container {
+			position: relative;
+			width: 50%;
+		}
+
+		.image {
+			opacity: 1;
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
+
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.container:hover .image {
+			opacity: 0.6;
+		}
+
+		.container:hover .middle {
+			opacity: 1;
+		}
+
+		.text {
+			color: white;
+			font-size: 16px;
+			padding: 16px 32px;
+		}
+	</style>
+
+</head>
+<!--Navigation-->
+
+<body>
+
+	<!--Mega-->
+
+
+
+	<!--end-->
+
+
+
+
+	<div class="nav-container">
+		<ul class="nav-ul">
+			<li class="nav-li"><a href="index.html">
+					<div class="nav-div">The MH Project.</div>
+				</a></li>
+			<li class="nav-li"><a href="#news">
+					<div class="nav-div">About</div>
+				</a></li>
+			<li class="nav-li"><a href="#contact">
+					<div class="nav-div">Our Services</div>
+				</a></li>
+			<li class="nav-li"><a href="#contact">
+					<div class="nav-div">Contact us</div>
+				</a></li>
+			<li class="nav-li"><a href="#contact">
+					<div class="nav-div">Menu <img style="float: right;" src="1x/baseline_expand_more_black_18dp.png"
+							alt="dropdown"></div>
+				</a></li>
+			<li class="nav-li" style="float:right"><a href="page1.html">
+					<div class="nav-div">Login </div>
+				</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!--Navigation end-->
+	<!---Main-->
+	<div class="main-container" align="center" style="width: 70%;height: 200px;">
+		<table>
+			<tr>
+				<td class="form-select">
+					<select style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit"
+						id="select0">
+
+						<option selected disabled>Services</option>
+						<option>Blood Banks</option>
+					</select></td>
+
+				<td class="form-select">
+					<select style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit"
+						id="select1" onchange="main_select()">
+						<option selected disabled>Country</option>
+						<option>Pakistan</option>
+						<option>India</option>
+						<option>United States</option>
+					</select></td>
+
+				<td class="form-select">
+					<select style="width: 200px;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit"
+						id="select2" onchange="main_select1()">
+						<option selected disabled>State</option>
+					</select></td>
+
+				<td class="form-select">
+					<select style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit"
+						id="select3">
+						<option selected disabled>City</option>
+						<option>Abbotabad</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td class="form-select" colspan="4">
+					<select style="width: 100%;height: 100%;padding: 20px;font-family:Amiko;font-size: inherit">
+						<option selected disabled>Blood Banks in Abbotabad</option>
+						<option>Abbotabad Clinical Laboratory and Blood Bank</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4"><a href="navigation.html"><input class="form-button" type="submit" name="submit"
+							value="NAVIAGATE" style="cursor: pointer"></a></td>
+			</tr>
+		</table>
+
+	</div>
+
+
+
+
+
+	<!---main end-->
+	<!---Grid  box apps-->
+	<div class="grid-container">
+		<div class="grid-item" style="padding-top: 200px">This could be the beginning.<p></p><img
+				src="img(icon8)/Google Play_50px.png" alt="googleplay" onMouseOver="gridmouseover()"
+				onMouseOut="gridmouseout()" id="gridimg1"><span style="margin-left: 30px;margin-right: 30px"></span><img
+				src="img(icon8)/Apple App Store_50px.png" alt="ios" onMouseOver="gridmouseover1()"
+				onMouseOut="gridmouseout1()" id="gridimg2"><br><span style="font-size: 12px;font-weight: bold">Mobile
+				Apps Coming soon...
+			</span>
+		</div>
+		<div class="grid-item" id="grid_img"></div>
+
+	</div>
+	<script>
+		function gridmouseover() {
+			document.getElementById("gridimg1").src = "img(icon8)/Google Play_50pxb.png";
+		}
+		function gridmouseout() {
+			document.getElementById("gridimg1").src = "img(icon8)/Google Play_50px.png";
+		}
+		function gridmouseover1() {
+			document.getElementById("gridimg2").src = "img(icon8)/Apple App Store_50pxb.png";
+		}
+		function gridmouseout1() {
+			document.getElementById("gridimg2").src = "img(icon8)/Apple App Store_50px.png";
+		}
+
+	</script>
+	<!----grid end>
+	
+	<!---info--->
+	<br>
+	<br>
+	<div style="width: 100%">
+		<table align="center">
+			<tr>
+				<td align="center" style="padding: 5px"><img src="img(icon8)/Clock_50px.png" alt="time"></td>
+				<td align="center" style="padding: 5px"><img src="img(icon8)/Hospital 3_50px.png" alt="people"></td>
+				<td align="center" style="padding: 5px"><img src="img(icon8)/Bandage_50px.png" alt="people"></td>
+				<td align="center" style="padding: 5px"><img src="img(icon8)/Family_50px.png" alt="people"></td>
+
+			</tr>
+			<tr>
+				<td align="center"><b>2 Seconds</b></td>
+				<td align="center"><b>1 : 7</b></td>
+				<td align="center"><b>1 Pint</b></td>
+				<td align="center"><b>3 Lives</b></td>
+			</tr>
+			<tr>
+				<td align="center" style="padding: 35px">Every 2 seconds,<br>
+					someone in the World<br> needs blood.</td>
+				<td align="center" style="padding: 35px">1 in 7 people entering the <br>
+					hospital will use blood.</td>
+				<td align="center" style="padding: 35px">Blood cannot be artificially<br>
+					made. The only way to have<br>enough blood to save lives <br>is through your blood <br>donations
+				</td>
+				<td align="center" style="padding: 35px">Every pint of blood can be <br>
+					split into platelets, plasma, <br> and red blood cells, which <br>can save 3 lives.</td>
+			</tr>
+		</table>
+		<!--end-->
+	</div>
+	<hr style="opacity: .1;">
+	<!--instastart-->
+	<div align="center">
+		<p style="font-size: 30px">@themhproject</p>
+	</div>
+	<table align="center">
+		<tr>
+			<td style="margin: 30px">
+				<div class="container" style="width: 250px;height: 250px;margin: 10px">
+					<img src="../1.PNG" alt="Avatar" class="image" style="width: 250px;height: 250px">
+					<div class="middle">
+						<div class="text">January 12, 2018</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="container" style="width: 250px;height: 250px;margin: 10px">
+					<img src="../2.PNG" alt="Avatar" class="image" style="width: 250px;height: 250px">
+					<div class="middle">
+						<div class="text">January 12, 2018</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="container" style="width: 250px;height: 250px;margin: 10px">
+					<img src="../3.PNG" alt="Avatar" class="image" style="width: 250px;height: 250px">
+					<div class="middle">
+						<div class="text">January 12, 2018</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="container" style="width: 250px;height: 250px;margin: 10px">
+					<img src="../4.PNG" alt="Avatar" class="image" style="width: 250px;height: 250px">
+					<div class="middle">
+						<div class="text">January 12, 2018</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div align="center"><input class="form-button" type="button" value="FOLLOW US" onClick=""
+			style="cursor: pointer;width: 250px"></div>
+	<br>
+	<!--end-->
+	<hr style="opacity: .1;">
+
+
+	<div style="width: 100%">
+		<table align="center">
+			<tr>
+				<td>
+					<p></p>
+				</td>
+
+				<td><input type="text" class="form-field"
+						style="width: 800px;border: none;border-bottom: #000000 2px solid;background-color: #F7F7F7;margin-right: 30px"
+						placeholder="Enter your email"></td>
+				<td><a href="page2.html"><input class="form-button" type="button" value="JOIN OUR NEWSLETTER" onClick=""
+							style="cursor: pointer;width: 430px"></a></td>
+			</tr>
+		</table>
+
+	</div>
+	<br>
+	<!---Footer-->
+	<div style="background-color: #FFFFFF;padding: 60px;">
+		<div style="float: left;padding-left: 50px;padding-right: 50px;" class="footer-img">
+			<img src="drop@2x copy.png" alt="logo">
+		</div>
+		<div>
+			<ul class="footer-ul">
+
+				<li class="footer-li"><a href="#" class="links" style="padding: 10px">How it works</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Our Story</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Blog</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">FAQ</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Career</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Terms</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Privacy Policy</a></li>
+				<br>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Contact</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Newsletter</a></li>
+				<li class="footer-li"><a href="#" class="links footer-a" style="padding: 10px">Refer a friend</a></li>
+			</ul>
+		</div>
+
+
+		<p>We look upon different platforms but there is no such platform in modern era of technology that helps people
+			to provide Digital Health Services.
+		</p>
+		<div style="float: right">
+			<table>
+				<tr>
+					<td>
+						<p style="padding-right: 10px;font-size: 15px"><b>Social Links:</b> </p>
+					</td>
+					<td><img src="img(icon8)/Facebook_30px.png" alt="fb" style="padding-right: 10px;cursor: pointer"
+							id="socialimgfooter" onMouseOver="imgmouseover()" onMouseOut="imgmouseout()"></td>
+					<td><img src="img(icon8)/Instagram_30px.png" alt="instagram"
+							style="padding-right: 10px;cursor: pointer" id="socialimgfooter1"
+							onMouseOver="img1mouseover()" onMouseOut="img1mouseout()"></td>
+					<td><img src="img(icon8)/Twitter_30px.png" alt="twitter" style="padding-right: 10px;cursor: pointer"
+							id="socialimgfooter2" onMouseOver="img2mouseover()" onMouseOut="img2mouseout()"></td>
+				</tr>
+			</table>
+
+
+
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<hr style="opacity: 0.1;">
+		<p style="float: left">Terms and Conditions | Privacy Policy</p>
+		<p style="float: right">© 2018 The MH Project.</p>
+	</div>
+
+
+	<!--footer end--->
+	<script>
+		function imgmouseover() {
+			document.getElementById("socialimgfooter").src = "img(icon8)/Facebook_30pxb.png";
+		}
+		function imgmouseout() {
+			document.getElementById("socialimgfooter").src = "img(icon8)/Facebook_30px.png";
+		}
+		function img1mouseover() {
+			document.getElementById("socialimgfooter1").src = "img(icon8)/Instagram_30pxb.png";
+		}
+		function img1mouseout() {
+			document.getElementById("socialimgfooter1").src = "img(icon8)/Instagram_30px.png";
+		}
+		function img2mouseover() {
+			document.getElementById("socialimgfooter2").src = "img(icon8)/Twitter_30pxb.png";
+		}
+		function img2mouseout() {
+			document.getElementById("socialimgfooter2").src = "img(icon8)/Twitter_30px.png";
+		}</script>
+
+	<script>
+		var state = {};
+		state['Pakistan'] = ['Azad Jammu & Kashmir', 'Balochistan', 'Gilgit-Baltistan', 'Islamabad Capital Territory', 'Khyber Pakhtunkhwa', 'Punjab', 'Sindh'];
+		state['India'] = ['Uttar Pradesh', 'Maharashtra', 'Bihar', 'Punjab'];
+		state['United States'] = ['Alaska', 'Texas', 'California', 'Montana', 'New Mexico'];
+		var city = {};
+		city['Khyber Pakhtunkhwa'] = ['Abbotabad', 'Mansehra', 'Haripur', 'peshawar'];
+		city['Punjab'] = ['Rawalpindi', 'Sialkot', 'Lahore', 'Faisalabad'];
+
+		function main_select() {
+
+			var select_op1 = document.getElementById("select1");
+			var select_op2 = document.getElementById("select2");
+			var sel = select_op1.options[select_op1.selectedIndex].value;
+			while (select_op2.options.length) {
+				select_op2.remove(0);
+			}
+			var c = state[sel];
+			if (c) {
+				for (var i = 0; i < c.length; i++) {
+					var cc = new Option(c[i], i);
+					select_op2.options.add(cc);
+				}
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
